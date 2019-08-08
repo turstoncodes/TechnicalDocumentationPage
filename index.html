@@ -1,5 +1,5 @@
 <nav id="navbar">
-  <header>JS Documentation</header>
+  <header>PHP Documentation</header>
   <ul>
     <li><a class="nav-link" href="#Introduction">Introduction</a></li>
     <li>
@@ -36,33 +36,18 @@
     <header>Introduction</header>
     <article>
       <p>
-        JavaScript is a cross-platform, object-oriented scripting language. It
-        is a small and lightweight language. Inside a host environment (for
-        example, a web browser), JavaScript can be connected to the objects of
-        its environment to provide programmatic control over them.
+        PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.
       </p>
 
       <p>
-        JavaScript contains a standard library of objects, such as Array, Date,
-        and Math, and a core set of language elements such as operators, control
-        structures, and statements. Core JavaScript can be extended for a
-        variety of purposes by supplementing it with additional objects; for
-        example:
+        Instead of lots of commands to output HTML (as seen in C or Perl), PHP pages contain HTML with embedded code that does "something" (in this case, output "Hi, I'm a PHP script!"). The PHP code is enclosed in special start and end processing instructions <?php and ?> that allow you to jump into and out of "PHP mode."
       </p>
       <ul>
         <li>
-          Client-side JavaScript extends the core language by supplying objects
-          to control a browser and its Document Object Model (DOM). For example,
-          client-side extensions allow an application to place elements on an
-          HTML form and respond to user events such as mouse clicks, form input,
-          and page navigation.
+          What distinguishes PHP from something like client-side JavaScript is that the code is executed on the server, generating HTML which is then sent to the client. The client would receive the results of running that script, but would not know what the underlying code was. You can even configure your web server to process all your HTML files with PHP, and then there's really no way that users can tell what you have up your sleeve.
         </li>
         <li>
-          Server-side JavaScript extends the core language by supplying objects
-          relevant to running JavaScript on a server. For example, server-side
-          extensions allow an application to communicate with a database,
-          provide continuity of information from one invocation to another of
-          the application, or perform file manipulations on a server.
+         The best things in using PHP are that it is extremely simple for a newcomer, but offers many advanced features for a professional programmer. Don't be afraid reading the long list of PHP's features. You can jump in, in a short time, and start writing simple scripts in a few hours.
         </li>
       </ul>
     </article>
@@ -79,51 +64,40 @@
         <li>Good working knowledge of HyperText Markup Language (HTML).</li>
         <li>
           Some programming experience. If you are new to programming, try one of
-          the tutorials linked on the main page about JavaScript.
+          the tutorials linked on the main page about php.
         </li>
       </ul>
     </article>
   </section>
   <section class="main-section" id="JavaScript_and_Java">
-    <header>JavaScript and Java</header>
+    <header>PHP and JavaScript</header>
     <article>
       <p>
-        JavaScript and Java are similar in some ways but fundamentally different
-        in some others. The JavaScript language resembles Java but does not have
-        Java's static typing and strong type checking. JavaScript follows most
-        Java expression syntax, naming conventions and basic control-flow
-        constructs which was the reason why it was renamed from LiveScript to
-        JavaScript.
+        s not fair to compare PHP vs JavaScript, as they both have different purposes for web-site development. PHP is a server-side scripting language while JavaScript is a client-side scripting language. In fact, the most dynamic website is created when we use functions of both these languages together. If PHP is like a paint-brush to paint picture, then JavaScript is a paint-color.
       </p>
 
       <p>
-        In contrast to Java's compile-time system of classes built by
-        declarations, JavaScript supports a runtime system based on a small
-        number of data types representing numeric, Boolean, and string values.
-        JavaScript has a prototype-based object model instead of the more common
-        class-based object model. The prototype-based model provides dynamic
-        inheritance; that is, what is inherited can vary for individual objects.
-        JavaScript also supports functions without any special declarative
-        requirements. Functions can be properties of objects, executing as
-        loosely typed methods.
+        PHP stands for "Hypertext Preprocessor", is a programming language embedded in HTML that does all sort of things like build custom web content, send and receive cookies, evaluate form data sent from a browser, etc. It is integrated with number of popular databases like Postgre SQL, Oracle, Sybase, SQL, and MySQL. PHP also supports major protocols like IMAP, POP3 and LDAP.
+        PHP can handle forms, save data to a file, return data to the user, gather data from files, etc.
+
+Example: Let say a website that takes user to view the order status after logging in. By PHP coding, you would send a query to the database that would then output the specific user information based on what information is in the database
       </p>
       <p>
-        JavaScript is a very free-form language compared to Java. You do not
-        have to declare all variables, classes, and methods. You do not have to
-        be concerned with whether methods are public, private, or protected, and
-        you do not have to implement interfaces. Variables, parameters, and
-        function return types are not explicitly typed.
+        While, JavaScript is designed for creating network-centric applications. With JavaScript, web pages will no longer be static HTML and allows the program that interacts with the user, control the browser, and dynamically create the HTML content. The advantage of JavaScript is that it has less server interaction, allowing you to validate user input before sending the page off which means less load on your server and less server traffic. JavaScript allows immediate feedback to the visitors.
+
+Example: When you hover over the menu tab on the web-page, the drop down effect is done through JavaScript.
       </p>
     </article>
   </section>
   <section class="main-section" id="Hello_world">
     <header>Hello world</header>
     <article>
-      To get started with writing JavaScript, open the Scratchpad and write your
-      first "Hello world" JavaScript code:
+      To get started with writing PHP, open the Scratchpad and write your
+      first "Hello world" PHPcode:
       <code
-        >function greetMe(yourName) { alert("Hello " + yourName); }
-        greetMe("World");
+        ><?php
+ echo "<h1>Hello World</h1>";
+?> 
       </code>
 
       Select the code in the pad and hit Ctrl+R to watch it unfold in your
@@ -137,9 +111,9 @@
       names of variables, called identifiers, conform to certain rules.
     </p>
     <p>
-      A JavaScript identifier must start with a letter, underscore (_), or
+      A PHP identifier must start with a letter, underscore (_), or
       dollar sign ($); subsequent characters can also be digits (0-9). Because
-      JavaScript is case sensitive, letters include the characters "A" through
+      PHP is case sensitive, letters include the characters "A" through
       "Z" (uppercase) and the characters "a" through "z" (lowercase).
     </p>
     <p>
@@ -181,7 +155,7 @@
       </p>
 
       <p>
-        JavaScript before ECMAScript 2015 does not have block statement scope;
+        PHP before ECMAScript 2015 does not have block statement scope;
         rather, a variable declared within a block is local to the function (or
         global scope) that the block resides within. For example the following
         code will log 5, because the scope of x is the function (or global
@@ -228,7 +202,7 @@
         can contain alphabetic, numeric, or underscore characters.
       </p>
 
-      <code>const PI = 3.14;</code>
+      <code>const %PI = 3.14;</code>
       <p>
         A constant cannot change value through assignment or be re-declared
         while the script is running. It has to be initialized to a value.
@@ -358,7 +332,11 @@
 
       <p>The following while loop iterates as long as n is less than three:</p>
 
-      <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
+      <code>$x = 1;
+ 
+while($x <= 5) {
+  echo "The number is: $x <br>";
+  $x++;</code>
       <p>
         With each iteration, the loop increments n and adds that value to x.
         Therefore, x and n take on the following values:
@@ -396,14 +374,18 @@
         For example, the following code defines a simple function named square:
       </p>
 
-      <code>function square(number) { return number * number; }</code>
+      <code>function writeMsg() {
+    echo "Hello world!";
+}
+
+writeMsg();</code>
       <p>
         The function square takes one argument, called number. The function
         consists of one statement that says to return the argument of the
         function (that is, number) multiplied by itself. The return statement
         specifies the value returned by the function.
       </p>
-      <code>return number * number;</code>
+      <code>return $number * $number;</code>
       <p>
         Primitive parameters (such as a number) are passed to functions by
         value; the value is passed to the function, but if the function changes
